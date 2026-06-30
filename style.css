@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: black;
+  font-family: "Poppins", sans-serif;
+}
+
+/* TITLE */
+#title {
+  position: fixed;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 60px;
+  font-weight: 900;
+  z-index: 9999;
+  text-shadow: 0 0 20px white, 0 0 40px cyan;
+}
+
+/* CAPTION */
+#caption {
+  position: fixed;
+  bottom: 50px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 55px;
+  font-weight: 800;
+  z-index: 9999;
+  text-shadow: 0 0 15px white, 0 0 30px pink, 0 0 60px hotpink;
+}
+
+/* 💖 HEART (FIX FULL) */
+.heart {
+  position: fixed;
+  color: pink;
+  font-size: 22px;
+  pointer-events: none;
+  z-index: 99999;
+  animation: floatUp 4s linear forwards;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-600px) scale(1.6);
+    opacity: 0;
+  }
+}
+
+canvas {
+  display: block;
+}
